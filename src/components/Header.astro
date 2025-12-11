@@ -1,0 +1,47 @@
+<body class="bg-black">
+
+    <header class="fixed top-0 left-0 w-full z-30 bg-transparent">
+      <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-2">
+        <div class="flex items-center">
+          <img src="/images/LOGO.webp" alt="Logo" class="bg-transparent backdrop-blur-3xl rounded-full px-6 h-22 w-60">
+        </div>
+
+        <div class="hidden md:flex items-center bg-white/20 backdrop-blur-xl px-6 py-3 rounded-full shadow-lg">
+          <ul class="flex items-center gap-6 text-white font-medium">
+            <li><a href="#quienes" class="hover:text-gray-200 transition">Sobre nosotros</a></li>
+            <li><a href="#servicios" class="hover:text-gray-200 transition">Nuestros servicios</a></li>
+            <li><a href="#portafolio" class="hover:text-gray-200 transition">Portafolio</a></li>
+            <li><a href="#cotizaciones" class="hover:text-gray-200 transition">Cotizaciones</a></li>
+          </ul>
+        </div>
+
+        <button id="menuBtn" class="md:hidden text-white text-3xl focus:outline-none">
+          ☰
+        </button>
+      </nav>
+
+      <div id="mobileMenu" class="hidden md:hidden bg-white/10 backdrop-blur-xl text-black py-6 px-6 space-y-4 rounded-xl mx-6 mt-2 shadow-xl">
+        <a href="#quienes" class="block text-lg hover:text-gray-600">Sobre nosotros</a>
+        <a href="#servicios" class="block text-lg hover:text-gray-600">Nuestros servicios</a>
+        <a href="#portafolio" class="block text-lg hover:text-gray-600">Portafolio</a>
+        <a href="#cotizaciones" class="block text-lg hover:text-gray-600">Cotizaciones</a>
+      </div>
+    </header>
+
+    <style>
+      html { scroll-behavior: smooth; }
+    </style>
+
+    <script>
+      const btn = document.getElementById("menuBtn");
+      const menu = document.getElementById("mobileMenu");
+  
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+
+    <div class="h-20"></div>
+  
+  </body>
+  
