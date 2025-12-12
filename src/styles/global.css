@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  min-height: 100vh;
+  min-height: 100dvh;
   font-family: "Montserrat", sans-serif; 
   background: linear-gradient(to bottom, #0a2221 0%, #0c2f1f 50%, #198351 100%);
   background-repeat: no-repeat;
@@ -13,6 +13,18 @@ body {
 
 html {
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Asegurar que el footer no se recorte en móviles */
+@media (max-width: 640px) {
+  body {
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+  
+  footer {
+    padding-bottom: max(2rem, env(safe-area-inset-bottom, 0) + 2rem);
+  }
 }
 
 @keyframes fadeDown {
