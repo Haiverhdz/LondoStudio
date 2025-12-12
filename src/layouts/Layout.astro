@@ -8,6 +8,7 @@ import "../styles/global.css";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>London Studio</title>
     <link rel="icon" type="image/png" href="/images/log0-icon.png" sizes="256x256">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +19,7 @@ import "../styles/global.css";
   <body class="min-h-screen flex flex-col bg-gradient-to-b from-[#1E9B5F] to-[#024653] text-white">
     <Header />
 
-    <main class="pt-24 max-w-6xl mx-auto px-6 flex-1">
+    <main class="pt-24 max-w-6xl block mx-auto px-6 flex-1">
       <slot />
     </main>
 
