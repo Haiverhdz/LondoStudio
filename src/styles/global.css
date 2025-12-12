@@ -11,6 +11,10 @@ body {
   background-size: cover;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 @keyframes fadeDown {
     0% {
       opacity: 0;
@@ -37,6 +41,11 @@ body {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+
+  #cotizaciones {
+    margin-top: 120px; 
   }
   
   .fade-up {
