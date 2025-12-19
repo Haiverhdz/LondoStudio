@@ -14,16 +14,27 @@ body {
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  height: 100%;
+  overflow-y: auto;
 }
 
 /* Asegurar que el footer no se recorte en móviles */
 @media (max-width: 640px) {
   body {
-    padding-bottom: env(safe-area-inset-bottom, 0);
+    padding-bottom: calc(env(safe-area-inset-bottom, 0) + 7rem);
+    min-height: 100dvh;
   }
   
   footer {
-    padding-bottom: max(2rem, env(safe-area-inset-bottom, 0) + 2rem);
+    padding-bottom: max(7rem, calc(3rem + env(safe-area-inset-bottom, 0))) !important;
+    margin-bottom: 0;
+  }
+}
+
+/* En pantallas más grandes, mantener padding normal */
+@media (min-width: 641px) {
+  footer {
+    padding-bottom: 4rem !important;
   }
 }
 
